@@ -8,7 +8,7 @@
 			<key>NSMenuItem</key>
 			<dict>
 				<key>default</key>
-				<string>DBCap</string>
+				<string>LinkCap</string>
 			</dict>
 			<key>NSMessage</key>
 			<string>runWorkflowAsService</string>
