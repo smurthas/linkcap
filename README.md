@@ -1,3 +1,5 @@
+**(Shameless personal Dropbox link plug!)** Don't have a Dropbox account, sign up using [this link](http://db.tt/6k0TmV2) and we'll both get extra space. Noice!
+
 LinkCap takes a screenshot, copies it to your Public Dropbox folder, bit.ly's the link and copies it to you clipboard so you can quickly paste it into an email, IM, etc.
 
 Works on OS X (10.4+, probably, but 10.6+ definitely - anyone want to test it on older systems??)
