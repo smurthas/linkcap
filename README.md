@@ -2,15 +2,37 @@ LinkCap takes a screenshot, copies it to your Public Dropbox folder, bit.ly's th
 
 Works on OS X (10.4+, probably, but 10.6+ definitely - anyone want to test it on older systems??)
 
-## Installation
+
+## Finding your Dropbox user id
 
 First, you need to find out your Dropbox user ID.
 
 1. Go to [your Dropbox public page](https://www.dropbox.com/home#/Public:::).
 2. Click on the blue arrow on the right side of one of the files and select "Copy Public Link"
-3. The URL will looks something like this:
+3. Your User ID will be contained in the URL, which will looks something like this:
     http://dl.dropbox.com/u/dropbox-user-id/filename-name
-4. Copy the Dropbox user id, and paste it into your ~/.profile like so:
+
+## Installation
+
+### The Simple Way
+
+From the terminal, run
+
+````bash
+./install -d <your-dropbox-user-id>
+````
+
+Optionally, you can include your bit.ly login and API key ([found here](https://bitly.com/a/your_api_key/)) to have your urls automatically shortened:
+
+
+````bash
+./install -d <your-dropbox-user-id> -l <your-bitly-login> -a <your-bitly-api-key>
+````
+
+
+## The Don't-You-Dare-Touch-My-.profile Way
+
+paste it into your ~/.profile like so:
 
 ```bash
 echo "export DB_USER=your-dropbox-user-id" >> ~/.profile
