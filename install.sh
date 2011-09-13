@@ -19,7 +19,7 @@ if [ -z "${db}" ] && [ -z "$DB_USER" ]; then
     exit 1
 fi
 
-if [ -n "$DB_USER" ]; then
+if [ -z "${DB_USER}" ]; then
     echo "" >> ~/.profile
     echo "export DB_USER=${db}" >> ~/.profile
 fi
